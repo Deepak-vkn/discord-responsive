@@ -1,0 +1,309 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #img {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            background-color: lightgray;
+            padding: 0;
+            margin: 0;
+        }
+        
+        #imgleft {
+            position: absolute;
+            left:0;
+            bottom: -20px;
+            margin: 0;
+            padding: 0;
+            width:500px;
+        }
+
+        #imgright {
+            position: absolute;
+            right: 0;
+            bottom: 0px;
+            margin: 0;
+            padding: 0;
+            width:500px;
+        }
+
+        
+
+        #text-image {
+            position: absolute;
+            top: 15%;
+            left: 26%;
+            text-align: center;
+            color: white;
+            width: 745px;
+            max-width: 90%; /* Adjust max-width for better fit */
+        }
+
+        #font {
+            font-size: 4vw;
+            font-family: var(--font-headline);
+            font-weight: 900;
+        }
+        #subheading{
+        width:300px;
+ 
+        }
+
+        p {
+            font-size: 1.5vw;
+        }
+        @media (max-width: 500px) {
+    #text-image {
+        position: absolute;
+        top: 0%;
+        left: 15%;
+        text-align: center;
+        color: white;
+        width: 80%;
+        max-width: 80%;
+    }
+
+    #font {
+        font-size: 4vw;
+        font-family: var(--font-headline);
+        font-weight: 900;
+        top:-15%;
+    }
+
+    .font2 {
+        font-size: 1.5vw;
+        
+    }
+}
+
+
+
+
+        /* Media queries for responsive design */
+        @media (max-width: 820px) {
+            .subheading {
+                width: 100%;
+            }
+
+            #formargin-gap {
+                width: 100%;
+            }
+
+            #imgleft {
+                display: none;
+            }
+            #img{
+                position: relative;
+            }
+
+            #text-image {
+
+               position: absolute;
+                top: 0%;
+                left:10%;
+                width: 350px;
+                height: 50px; /* Adjust the width for better fit */
+            }
+
+            #font {
+                font-size: 5vw;
+                font-family: var(--font-headline);
+                font-weight: 900;
+                max-width: 100%; /* Ensure the text doesn't overflow */
+            }
+        }
+
+        @media (max-width: 992px) {
+            #text-image {
+                position: absolute;
+                top: 0%;
+                right: 50%;
+                width: 500px;
+                height: 30px;
+            }
+
+            #imgright {
+                display: none;
+            }
+
+            #imgleft {
+                width: 300px;
+            }
+        }
+
+        @media (max-width: 1446px) {
+            .pos {
+                display: none;
+            }
+            #imgright{
+                width: 100px;
+                height: auto;
+            }
+        }
+
+        body {
+            margin: 0;
+        }
+        #text-down{
+        font-size: 50px;
+        font-weight: 900;
+        color: black;
+
+        }
+
+        #sub-text {
+        }
+
+        #chill {
+            width: 100%;
+        }
+
+        #journey {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 100px;
+            margin-bottom: 40px;
+        }
+
+        #for-gap {
+            margin-top: 40px;
+            margin-bottom: 150px;
+        }
+
+        .download-btn {
+            border: none;
+            color: white;
+        }
+
+        #butn-window {
+            color: white;
+            background-color: rgb(80, 80, 245);
+            padding: 20px;
+        }
+
+        .ul {
+            list-style: none;
+        }
+
+        ul.ul li {
+            padding-left: 0;
+            line-height: 30px;
+            color: white;
+            cursor: pointer;
+            border: 0;
+        }
+
+        ul.ul li:hover {
+            text-decoration: underline;
+        }
+
+        .myselect {
+            width: 150px;
+            background-color: black;
+            color: white;
+            border: none;
+        }
+
+        #list {
+            width: 18px;
+            align-items: center;
+        }
+
+        #formargin-gap {
+            margin-top: 100px;
+        }
+
+        select.myselect:focus {
+            outline: none;
+        }
+
+        #social-media {
+            margin-top: 30px;
+        }
+
+        #icon {
+            color: white;
+            height: 24px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        #underline {
+            border: none;
+            border-bottom: 2px;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            border-style: solid;
+            color: blue;
+        }
+
+        .last-btn {
+            color: white;
+            background-color: #5865f2;
+            outline: none;
+            border: none;
+            align-items: center;
+            justify-content: center;
+            margin-top: 5px;
+            width: 100px;
+            height: 30px;
+        }
+
+        #downlod-last {
+            justify-content: end;
+        }
+
+        .last-btn:hover {
+            opacity: 0.9;
+            background-color: #5bc0de;
+        }
+
+        #forbtn {
+            position: absolute;
+            z-index: 3;
+            color: black;
+            background-color: white;
+            min-width: 230px;
+            height: 55px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            bottom: 150px;
+            left: 32%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #forbtn-2 {
+            position: absolute;
+            z-index: 3;
+            color: white;
+            background-color: black;
+            min-width: 230px;
+            height: 55px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            bottom: 150px;
+            left: 50%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mainbtn {
+            border: none;
+            outline: none;
+            background-color: white;
+        }
+
+        .mainbtn-2 {
+            border: none;
+            outline: none;
+            background-color: black;
+            color: white;
+        }
